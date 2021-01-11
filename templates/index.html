@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Website</title>
+  </head>
+  <body>
+    <div id="root" style="-webkit-tap-highlight-color:rgba(0,0,0,0)" onclick="return true">
+      <form 
+         action="http://{{ ip }}:5000/upload" 
+         method="POST"
+         enctype = "multipart/form-data">
+      <input type="file" name="file" />
+      <input type="submit"/>
+      </form>   
+   </div>
+  </body>
+</html>
